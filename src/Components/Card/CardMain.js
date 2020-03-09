@@ -1,5 +1,6 @@
 import React ,{Component} from "react";
-import {Card,Button,notification}  from "antd";
+import {Card,Row,Col,Button,notification,Menu}  from "antd";
+import "../../static/resp.css"
 const { Meta } = Card;
 
 class CardMain extends Component{
@@ -17,15 +18,62 @@ class CardMain extends Component{
     };
     render() {
         return (
+            <div>
+                <div className="site-card-wrapper">
+                    <Row gutter={16}>
+                        <Col span={8}>
+                            <Card title="Card title" bordered={true} hoverable
+                                  style={{ width: 240,  marginTop:20}}
+                                  cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />} >
+                                <Meta title="Europe Street beat" description="www.instagram.com" />
+                            </Card>
+                        </Col>
+                        <Col span={8}>
+                            <Card title="Card title" bordered={true} hoverable
+                                  style={{ width: 240 ,  marginTop:20}}
+                                  cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />} >
+                                <Meta title="Europe Street beat" description="www.instagram.com" />
+                            </Card>
+                        </Col>
+                        <Col span={8}>
+                            <Card title="Card title" bordered={true} hoverable
+                                  style={{ width: 240,  marginTop:20 }}
+                                  cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />} >
+                                <Meta title="Europe Street beat" description="www.instagram.com" />
+                            </Card>
+                        </Col>
+                    </Row>
+                </div>
 
-            <Card
-                hoverable
-                style={{ width: 240 , marginTop:50,marginLeft:50 }}
-                cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-                <Meta title="Test Test Test" /*description="www.instagram.com"*/  />
-                <Button type={"danger"} danger style={{marginTop:20}} onClick={this.Notif}>Default</Button>
-            </Card>
+
+                <div className="site-card-wrapper">
+                    <Row gutter={16}>
+                        <Col span={8}>
+                            <Card title="Card title" bordered={true} hoverable
+                                  style={{ width: 240,  marginTop:20}}
+                                  cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />} >
+                                <Meta title="Europe Street beat" description="www.instagram.com" />
+                            </Card>
+                        </Col>
+                        <Col span={8}>
+                            <Card title="Card title" bordered={true} hoverable
+                                  style={{ width: 240 ,  marginTop:20}}
+                                  cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />} >
+                                <Meta title="Europe Street beat" description="www.instagram.com" />
+                            </Card>
+                        </Col>
+                        <Col span={8}>
+                            <Card title="Card title" bordered={true} hoverable
+                                  style={{ width: 240,  marginTop:20 }}
+                                  cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />} >
+                                <Meta title="Europe Street beat" description="www.instagram.com" />
+                            </Card>
+                        </Col>
+                    </Row>
+                </div>
+
+            </div>
+
         );
     }
 }

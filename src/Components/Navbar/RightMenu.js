@@ -9,23 +9,22 @@ class RightMenu extends Component {
     return (
         <div className="color-nav">
 			<Menu mode="horizontal">
-        <Menu.Item key="home" >
-          <a href="">خانه</a>
-        </Menu.Item>
-        <Menu.Item key="about" >
-          <a href="">درباره</a>
-        </Menu.Item>
 
-                <SubMenu title={<span>زیر منو</span>} >
-                    <MenuItemGroup title="تست">
-                        <Menu.Item key="setting:1">Test1</Menu.Item>
-                        <Menu.Item key="setting:2">Test2</Menu.Item>
-                    </MenuItemGroup>
-                    <MenuItemGroup title="تست">
-                        <Menu.Item key="setting:3">Test3</Menu.Item>
-                        <Menu.Item key="setting:4">Test4</Menu.Item>
-                    </MenuItemGroup>
-                </SubMenu>
+
+
+        <Menu.Item key="about" >
+          <a href="">ورود</a>
+
+
+        </Menu.Item>
+                <Menu.Item key="signup"  >
+                    <a href="">ثبت نام</a>
+                </Menu.Item>
+
+
+                <Menu.Item key="home" >
+                    <a href="">خانه</a>
+                </Menu.Item>
 
       </Menu>
 
